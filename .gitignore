@@ -5,3 +5,5 @@ __pycache__/
 *.pyc
 .deepeval*
 .pytest_cache/
+.DS_Store
+.idea/
