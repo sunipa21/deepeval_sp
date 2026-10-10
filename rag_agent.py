@@ -23,7 +23,7 @@ load_dotenv()
 
 from langchain_core.tools import tool
 from langchain_core.vectorstores import InMemoryVectorStore
-from langchain_anthropic import ChatAnthropic
+from llm_config import get_chat_model
 from langchain_openai import OpenAIEmbeddings
 from langchain.agents import create_agent
 
@@ -103,7 +103,7 @@ def search_policies(query: str) -> str:
 # ---------------------------------------------------------------------------
 # Agent
 # ---------------------------------------------------------------------------
-llm = ChatAnthropic(model="claude-sonnet-4-6", temperature=0)
+llm = get_chat_model()  # model set by AGENT_MODEL in .env (see llm_config.py)
 
 agent = create_agent(
     model=llm,

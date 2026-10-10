@@ -5,10 +5,10 @@ Orders are tracked by order ID. Once an order is placed it goes through three st
 
 SHIPPING OPTIONS
 ShopEasy offers three shipping methods:
-- Standard shipping takes 3 to 5 business days and is free on orders over $50.
-- Express shipping takes 1 to 2 business days and costs $12.99.
-- Overnight shipping delivers the next business day and costs $24.99.
-Once an order has been shipped, the shipping method cannot be changed.
+- Standard shipping takes 5 to 7 business days and is free on orders over $50 (otherwise $5.99).
+- Express shipping takes 1 to 2 business days and costs $15. Express orders placed before 2 PM are dispatched the same day.
+- International shipping takes 10 to 21 business days. Customs duties and import taxes are the buyer's responsibility.
+Once an order has been shipped, the shipping method and delivery address cannot be changed.
 
 ELECTRONICS RETURN POLICY
 Electronics can be returned within 15 days of purchase. The item must be unopened and in its original packaging. Returns outside this window are not accepted.

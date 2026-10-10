@@ -9,17 +9,15 @@ Run standalone to verify:
 
 from mcp.server.fastmcp import FastMCP
 
+from mock_data import SHIPPING_OPTIONS
+
 mcp = FastMCP("ShopEasy Shipping")
 
 
 @mcp.tool()
 def get_shipping_options() -> str:
     """Return available shipping methods with delivery times and costs."""
-    return (
-        "Standard (3-5 days, free on orders over $50), "
-        "Express (1-2 days, $12.99), "
-        "Overnight (next business day, $24.99)."
-    )
+    return "; ".join(f"{name}: {days}, {cost}" for name, days, cost in SHIPPING_OPTIONS)
 
 
 if __name__ == "__main__":

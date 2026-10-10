@@ -1,5 +1,9 @@
 # DeepEval Agentic Testing Demo
 
+> **New: multi-agent support system.** See `docs/ARCHITECTURE.md` (agent + RAG design)
+> and `docs/EVALUATION_STRATEGY.md` (infrastructure / application / business evaluation).
+> Quick start: `source .venv/bin/activate && pytest tests/ -q && python evals/test_multi_agent.py --no-judge`
+
 A minimal teaching repo that shows how to evaluate a LangChain agent with
 DeepEval's component-level evaluation: **Task Completion** and **Tool
 Correctness** metrics, applied to a cross-vendor setup (Claude as the
